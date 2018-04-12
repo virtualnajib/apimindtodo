@@ -50,7 +50,7 @@ getOne();
 createNew();
 createNew();
 getAll();
-
+/*
 const fetch = require('./node-fetch');
 fetch('http://localhost:3000')
 .then(rawResponse => {
@@ -59,3 +59,4 @@ fetch('http://localhost:3000')
 .catch(function(error){
   console.log(error);
 })
+*/
