@@ -1,7 +1,8 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 var bodyParser = require("body-parser");
-
+const PORT = process.env.PORT || 3000;
 // var requestTime = function(req, res, next) {
 //   req.requestTime = new Date();
 //   next();
@@ -57,4 +58,4 @@ app.delete("/todo/:id", (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Example app listening on port 3000!"));
+app.listen(PORT, () => console.log("Example app listening on port 3000!"));
